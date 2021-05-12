@@ -5,6 +5,10 @@
 Um das Projekt zu Starten, muss die MySQL Datenbank lokal installiert werden. Dafür muss die Datei `DatabaseMySQL\vinyl.sql` beispielsweise über phpmyadmin importiert werden. 
 Anschließend muss die `backend/config/db.config.js` mit dem eigenen Passwort angepasst werden. 
 
+Nachdem die Datenbank installiert , und die `db.config.js` Datei angepasst wurde, kann das Backend mit dem Befehl `node server.js` über das Terminal im `backend` Verzeichnis gestartet werden. Nach einem erfolgreichem Start müsste die Ausgabe wie folgt aussehen. 
+
+   ![backendStart][backendStart]
+
 ## Test Endpoints
  Es werden sämtliche Endpunkte des Servers getestet. Dazu wird `jest` und `supertest` verwendet. Die Tests befinden sich unter `backend\model\singer.test.js`. 
 Zuerst wird ein Testdatensatz in die Datenbank geschrieben mithilfe des `POST` Endpunktes. 
@@ -87,4 +91,5 @@ mit Angular und Bootstrap. Alle CRUD- Operationen werden ausgeführt.
 
 
 [npm Test]: Images/runTest.png  "Run Test"
+[backendStart]: Images/startServer.png "Run Backend"
 
