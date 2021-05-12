@@ -16,7 +16,7 @@ export class BackendService {
 
   constructor(private http: HttpClient) { }
 
-  // Funktion getAll() mit Rückgabewert Observable vom Typ Data siehe Service data.ts
+  /* Funktionen, die vom Backend ausgeführt werden mussen */
   getAll(): Observable<Data[]>{
     return this.http.get<Data[]>(this.baseUrl)
   }

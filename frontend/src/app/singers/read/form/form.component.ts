@@ -2,7 +2,9 @@ import {Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Data } from '../../../shared/data';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { Location } from '@angular/common';
-
+ /**
+  *  Komponete fuer das Formular welches beim Klick auf das Edit Icon aufgerufen wird
+  *  */
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -32,6 +34,7 @@ export class FormComponent implements OnInit {
     });
   }
 
+  /** aufrufen der backend.service.ts Methode Update, nachdem das Formular ausgefüllt wurde */
   onSubmit(): void {
     const values = this.form.value;
     this.data.SingerID = values.idControl;
@@ -40,6 +43,7 @@ export class FormComponent implements OnInit {
     this.updateEvent.emit(this.data);
   }
 
+  /** Zurueck zur Read ansicht wenn Update abgebrochen wird */
   cancel(): void {
     this.location.back();
   }

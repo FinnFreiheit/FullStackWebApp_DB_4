@@ -4,6 +4,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {Data} from '../../shared/data';
 import {BackendService} from '../../shared/backend.service';
 
+/* Creat Komponente, erzeugt ein Formular und nutz die creat API vom Backend */
 @Component({
   selector: 'app-create',
   templateUrl: './create.component.html',
@@ -31,6 +32,8 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /* Nach dem absenden des Creat-Formulars werden die einträge in Data gespeichert und die creat Methode vom backend.service.ts aufgerufen */
+
   onSubmit(): void {
     console.warn(this.form.value);
     const values = this.form.value;
@@ -41,6 +44,7 @@ export class CreateComponent implements OnInit {
     this.router.navigate(['/read']);
   }
 
+  /* Wird die Eingabe abgebrochen, so wird die read Komponente aufgerufen */
   cancel(): void {
     this.router.navigate(['/read']);
   }

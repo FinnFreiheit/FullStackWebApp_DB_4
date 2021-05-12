@@ -4,7 +4,7 @@ import { UpdateComponent } from './singers/update/update.component';
 import { CreateComponent } from './singers/create/create.component';
 import { ReadComponent } from './singers/read/read.component';
 
-
+/** Routen definieren  */
 
 const routes: Routes = [
   { path: 'create', component: CreateComponent},

@@ -1,3 +1,8 @@
+/*
+Methoden definieren, die SQL Befehle ausführen. 
+Methoden werden über den Router aufgerufen. 
+*/
+
 const sql = require("./db.js");
 
 // constructor

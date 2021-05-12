@@ -65,6 +65,7 @@ export class ReadComponent implements OnInit {
     );
   }
 
+  // Backend service get Data by ID 
   readOne(id: number): void {
     this.cs.getDataById(id).subscribe(
       (response: Data) => this.singer = response,
@@ -72,17 +73,20 @@ export class ReadComponent implements OnInit {
     );
   }
 
+  // Backend service Update with Data
   update(data: Data): void {
     this.singer = data;
     this.cs.update(this.singer.SingerID, this.singer);
     this.router.navigateByUrl('/read');
   }
 
+  // Backend Service Delete by ID
   deleteOne(id: number): void {
     this.cs.deleteOne(id);
     window.location.reload();
   }
 
+  // Read by ID
   open(content, id: number): void {
     this.readOne(id);
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
