@@ -77,19 +77,39 @@ it("DELETE by ID /singers", async ()=>{
 
 
 
-## Start Frontend `ng serve`
-## Start Backend `node server.js`
-
-
-# Backend 
-
-
-
 # Frontend
+## Start Frontend
+In dem Frontend werden die CRUD- Befehle des Backends ausgeführt. Um das Frontend zu starten, muss im Terminal des Verzeichnises `DBFULLSTACK\frontend` der Befehl `ng serve` eingegeben werden. Wichtig ist hierbei das das Backend bereits läuft. 
+Nach erfolgreicher eingabe sollte die Ausgabe wie folgt aussehen. 
 
-mit Angular und Bootstrap. Alle CRUD- Operationen werden ausgeführt. 
+![ngServe][ngServe]
 
+Die webseite kann über folgenden Link erreicht werden: [http://localhost:4200/](http://localhost:4200/).
+
+Die Startseite der Anwendung sieht folgendermaßen aus: 
+![homePage][homepage]
+
+### Read
+Wird der Link `Read` angeklickt, so wird ein `GET/Singer` API-Aufruf durchgeführt und alle Inhalte der Singertabelle werden angezeigt. 
+![read][read]
+
+### Update and Read by ID
+Durch ein Klick auf das `Edit` Symbol, wird ein eingabeformular aufgerufen, das Formular enthält bereits die Werte des zu bearbeitenden Eintrags, diese werden durch ein `GET by ID` Aufruf vom Backend angefordert. 
+![update][update]
+
+### Delete
+Durch ein Klick auf das Delete-Icon wird ein Delete-Formular geöffnet, nachdem bestätigen des löschens, wird der Eintrag aus der Datenbank entfernt
+![delete][delete] 
+
+### Update
+wird in der oberen Navigationsleiste der `Creat` Link ausgewählt, so öffnet sich eine Eingabeformular, über welches ein Eintrag in Datenbank erstellt werden kann. 
+![creat][creat]
 
 [npm Test]: Images/runTest.png  "Run Test"
 [backendStart]: Images/startServer.png "Run Backend"
-
+[ngServe]: Images/ngServe.png "Run Frontend"
+[homePage]:Images/homePage.png "HomePage"
+[creat]: Images/creat.png "creat"
+[delete]: Images/delete.png "delete"
+[read]: Images/read.png "read"
+[update]: Images/update.png "update"
