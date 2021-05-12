@@ -2,6 +2,29 @@
 
 # Backend 
 
+In der Folgenden Arbeit wurde eine eigene REST API mit Node Express erstellt. Mithilfe der API können CRUD-Befehle auf die local installierte MySQL-Datenbank `Vinyl` mit der Tabelle `Singer `ausgeführt werden. Die MySQL-Datenbank ist folgendermaßen aufgebaut. Das Backend verfügt über folgende Endpunkte. 
+
+### Tabelle `Singer`
+
+|Singer|
+|-----------|
+|**SingerID**|
+|FirstName|
+|LastName|
+|BirthYear|
+
+## API Endpunkte
+
+Methode | URL | Bedeutung
+--------| ----| ---------
+GET|/singers| hole alle Datensätze 
+GET| /singers/11| hole den Datensatz mit der ID = 11
+POST| /singers | füge einen neuen Datensatz hinzu
+PUT | /singers/11 | ändere den Datensatz mit der ID = 11
+DELETE| /singers/11 | lösche den Datensatz mit der ID = 11
+DELETE | /singers   | lösche alle Datensätze 
+
+## Backend Starten
 Um das Projekt zu Starten, muss die MySQL Datenbank lokal installiert werden. Dafür muss die Datei `DatabaseMySQL\vinyl.sql` beispielsweise über phpmyadmin importiert werden. 
 Anschließend muss die `backend/config/db.config.js` mit dem eigenen Passwort angepasst werden. 
 
@@ -60,29 +83,6 @@ it("DELETE by ID /singers", async ()=>{
 
 # Backend 
 
-eigene REST API mit Node Express. 
-
-## Datenbank vinyl
-
-### Tabelle `Singer`
-
-|Singer|
-|-----------|
-|**SingerID**|
-|FirstName|
-|LastName|
-|BirthYear|
-
-## CRUD-Befehle für die Tabelle `Singer`
-
-Methode | URL | Bedeutung
---------| ----| ---------
-GET|/singers| hole alle Datensätze 
-GET| /singers/11| hole den Datensatz mit der ID = 11
-POST| /singers | füge einen neuen Datensatz hinzu
-PUT | /singers/11 | ändere den Datensatz mit der ID = 11
-DELETE| /singers/11 | lösche den Datensatz mit der ID = 11
-DELETE | /singers   | lösche alle Datensätze 
 
 
 # Frontend
