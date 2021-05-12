@@ -1,0 +1,12 @@
+Table "Album" {
+  "AlbumID" int [pk, not null]
+  "Name" int [not null]
+  "SingerID" int [ref: > Singer.SingerID, default: NULL]
+}
+
+Table "Singer" {
+  "SingerID" int [pk, not null]
+  "LastName" varchar(255) [not null]
+  "FirstName" varchar(255) [default: NULL]
+  "BirthYear" int [default: NULL]
+}
