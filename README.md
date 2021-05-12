@@ -1,5 +1,3 @@
-# Full_Stack_WebApp_DB
-
 # Backend 
 
 In der Folgenden Arbeit wurde eine eigene REST API mit Node Express erstellt. Mithilfe der API können CRUD-Befehle auf die local installierte MySQL-Datenbank `Vinyl` mit der Tabelle `Singer `ausgeführt werden. Die MySQL-Datenbank ist folgendermaßen aufgebaut. Das Backend verfügt über folgende Endpunkte. 
@@ -89,20 +87,20 @@ Die webseite kann über folgenden Link erreicht werden: [http://localhost:4200/]
 Die Startseite der Anwendung sieht folgendermaßen aus: 
 ![homePage][homepage]
 
-### Read
-Wird der Link `Read` angeklickt, so wird ein `GET/Singer` API-Aufruf durchgeführt und alle Inhalte der Singertabelle werden angezeigt. 
+## Read
+Wird der Link `Read` angeklickt, so wird ein `GET/Singer` API-Aufruf durchgeführt und alle Inhalte der Singer-Tabelle werden angezeigt. 
 ![read][read]
 
-### Update and Read by ID
-Durch ein Klick auf das `Edit` Symbol, wird ein eingabeformular aufgerufen, das Formular enthält bereits die Werte des zu bearbeitenden Eintrags, diese werden durch ein `GET by ID` Aufruf vom Backend angefordert. 
+## Update and Read by ID
+Durch ein Klick auf das `Edit` Symbol, wird ein Eingabeformular aufgerufen, das Formular enthält bereits die Werte des zu bearbeitenden Eintrags, diese werden durch ein `GET by ID` Aufruf vom Backend angefordert. 
 ![update][update]
 
-### Delete
+## Delete
 Durch ein Klick auf das Delete-Icon wird ein Delete-Formular geöffnet, nachdem bestätigen des löschens, wird der Eintrag aus der Datenbank entfernt
 ![delete][delete] 
 
-### Update
-wird in der oberen Navigationsleiste der `Creat` Link ausgewählt, so öffnet sich eine Eingabeformular, über welches ein Eintrag in Datenbank erstellt werden kann. 
+## Update
+wird in der oberen Navigationsleiste der `Creat` Link ausgewählt, so öffnet sich ein Eingabeformular, über welches ein Eintrag in Datenbank erstellt werden kann. 
 ![creat][creat]
 
 [npm Test]: Images/runTest.png  "Run Test"
