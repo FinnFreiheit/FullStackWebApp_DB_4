@@ -2,6 +2,9 @@
 
 # Backend 
 
+Um das Projekt zu Starten, muss die MySQL Datenbank lokal installiert werden. Dafür muss die Datei `DatabaseMySQL\vinyl.sql` beispielsweise über phpmyadmin importiert werden. 
+Anschließend muss die `backend/config/db.config.js` mit dem eigenen Passwort angepasst werden. 
+
 ## Test Endpoints
  Es werden sämtliche Endpunkte des Servers getestet. Dazu wird `jest` und `supertest` verwendet. Die Tests befinden sich unter `backend\model\singer.test.js`. 
 Zuerst wird ein Testdatensatz in die Datenbank geschrieben mithilfe des `POST` Endpunktes. 
@@ -41,8 +44,10 @@ it("DELETE by ID /singers", async ()=>{
 
  ## Test durchführen 
 
- Um die Tests durchzuführen, muss das Backend gestartet werden. Dafür muss zum Backend-Verzeichniss navigiert werden. Im Terminal wird mithilfe des Befehls `node server.js` das Backend gestartet. Anschließend können die Tests mit dem Befehl `npm test` ausgeführt werden. 
-![Alt-Text][npm test]
+ Um die Tests durchzuführen, muss das Backend gestartet werden. Dafür muss zum Backend-Verzeichniss navigiert werden. Im Terminal wird mithilfe des Befehls `node server.js` das Backend gestartet. Anschließend können die Tests mit dem Befehl `npm test` ausgeführt werden.    
+
+   ![Alt-Text][npm test]
+
 
 
 ## Start Frontend `ng serve`
@@ -82,5 +87,4 @@ mit Angular und Bootstrap. Alle CRUD- Operationen werden ausgeführt.
 
 
 [npm Test]: Images/runTest.png  "Run Test"
-# 2533282_DB
-# 2533282_DB_sem4
+
