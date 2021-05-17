@@ -1,3 +1,5 @@
+# Projekt Video 
+   [https://youtu.be/jLvjuwSmj80](https://youtu.be/jLvjuwSmj80)
 # Backend 
 
 In der vorliegenden Arbeit wurde eine eigene [REST-API](https://www.redhat.com/de/topics/api/what-is-a-rest-api) mit [Express](https://expressjs.com/de/), einem Web-Framework für [Node.js](https://nodejs.org/en/), erstellt. Mithilfe der API können sogenannte **CRUD**-Befehle (**C**reate, **R**ead, **U**pdate, **D**elete) auf der lokal installierten MySQL-Datenbank `Vinyl` mit der Tabelle `Singer `ausgeführt werden. Die MySQL-Datenbank ist folgendermaßen aufgebaut. Das Backend verfügt über folgende Endpunkte. 
